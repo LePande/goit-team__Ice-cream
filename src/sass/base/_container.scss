@@ -1,3 +1,6 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
 .container {
   letter-spacing: 0.03em;
   min-width: 320px;
