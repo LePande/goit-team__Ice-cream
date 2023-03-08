@@ -1,12 +1,15 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
 body {
-  font-family: var($text-dm-sans);
-  color: var($quaternary-color);
+  font-family: $text-dm-sans;
+  color: $quaternary-color;
 }
 body::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background: var($tertiary-color);
+  background: $tertiary-color;
   border-radius: 50px;
 }
 h1,
