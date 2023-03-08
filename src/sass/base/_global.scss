@@ -1,0 +1,39 @@
+body {
+  font-family: var($text-releway);
+  color: var($quaternary-color);
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var($tertiary-color);
+  border-radius: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
