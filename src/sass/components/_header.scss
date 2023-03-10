@@ -1,0 +1,275 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.header {
+  background-color: $background-color-primary;
+}
+.container-modificator {
+  height: 471px;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  max-width: 480px;
+  padding: 6 20px;
+  background-image: url(https://cdn.discordapp.com/attachments/845486960742105089/1083495517775994920/Elaaaa.png);
+  background-color: $background-color-primary;
+  background-size: 346px 346px;
+  background-repeat: no-repeat;
+  background-position: top 83px left 36px;
+}
+.menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.ice-cream {
+  position: absolute;
+  bottom: 0;
+  right: 5vh;
+  width: 171px;
+  height: 410px;
+}
+.sootasty {
+  display: none;
+}
+.button-nav {
+  margin-right: 30px;
+  width: 210px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: $background-color-secondary;
+  color: $tertiary-color;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+.menu-list {
+  display: none;
+  flex-wrap: wrap;
+}
+// .menu-list-link {
+//   font-size: 14px;
+//   font-weight: 500;
+//   line-height: 0.8;
+//   letter-spacing: 0.02em;
+//   text-align: left;
+//   color: $primary-color;
+//   text-decoration: none;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
+// .menu-list-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+// .menu-list-home {
+//   font-size: 14px;
+//   font-weight: 500;
+//   line-height: 0.8;
+//   letter-spacing: 0.02em;
+//   text-align: left;
+//   text-decoration: none;
+//   color: $tertiary-color;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   transition: color 250ms var(--cubic);
+// }
+
+// .menu-list-link:hover {
+//   color: $tertiary-color;
+// }
+// .menu-list-link {
+//   font-size: 14px;
+//   font-weight: 500;
+//   line-height: 0.8;
+//   letter-spacing: 0.02em;
+//   text-align: left;
+//   color: $primary-color;
+//   text-decoration: none;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
+.btn-buy {
+  display: flex;
+  margin-left: auto;
+}
+.btn-buy {
+  display: none;
+  margin-right: 30px;
+  z-index: 50;
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: $background-color-secondary;
+  color: $tertiary-color;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.icon-buy {
+  margin-left: 15px;
+}
+.menu-link {
+  width: 157px;
+  left: 40px;
+  top: 48px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: $primary-color;
+  &:hover {
+    color: $tertiary-color;
+  }
+}
+.menu-toggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  background-color: $background-color-rgba-secondary;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  color: $primary-color;
+}
+
+.mobile-menu {
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .menu-link {
+  display: block;
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: $tertiary-color;
+  }
+}
+.menu-close-button-icon {
+  width: 15px;
+  height: 15px;
+}
+.caption {
+  position: relative;
+  top: 15vh;
+  z-index: 5;
+}
+.main-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-color;
+  z-index: 10;
+  margin-bottom: 19px;
+  cursor: default;
+  &-passion {
+    color: $tertiary-color;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+.btn-products {
+  background-color: $tertiary-color;
+  color: $primary-color;
+  margin-right: 10px;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.btn-how-made {
+  background-color: $background-color-secondary;
+  color: $tertiary-color;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    background-color: $background-color-rgba-tertiary;
+    transform: translateY(-5px);
+  }
+}
+.btn-products,
+.btn-how-made {
+  border: none;
+  border-radius: 20px;
+  padding: 0 14px;
+  margin: 0;
+  cursor: pointer;
+  height: 24px;
+  font-size: 8px;
+  line-height: 1.25;
+}
+.caption-text-p {
+  font-weight: 700;
+  font-size: 12px;
+}
+.caption-text-h {
+  font-weight: 700;
+  font-size: 12px;
+}
+.cuantos {
+  display: none;
+}
+.milk {
+  display: none;
+}
