@@ -1,3 +1,67 @@
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu" type="button" title="button">
+    <svg class="menu-close-button-icon">
+      <use href="/src/images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <button type="button" title="button" class="button-nav">
+    Buy now<svg class="icon-buy" width="8" height="10">
+      <use href="/src/images/icons.svg#icon-arrow-buy"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu">
+    <li>
+      <a
+        title="link"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+        href="#"
+        class="menu-link"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        title="link"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+        href="#"
+        class="menu-link"
+        >About us</a
+      >
+    </li>
+    <li>
+      <a
+        title="link"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+        href="#"
+        class="menu-link"
+        >How it's made?</a
+      >
+    </li>
+    <li>
+      <a
+        title="link"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+        href="#"
+        class="menu-link"
+        >Our products</a
+      >
+    </li>
+    <li>
+      <a
+        title="link"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+        href="#"
+        class="menu-link"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</div>
 <header class="header">
   <div class="container-modificator container">
     <div class="header-container">
@@ -13,11 +77,22 @@
             <use href="/src/images/icons.svg#icon-IceCream"></use>
           </svg>
         </a>
+        <button
+          title="button"
+          type="button"
+          class="burger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="25" height="17">
+            <use href="/src/images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="menu-list list">
           <li class="menu-list-item">
             <a
               title="link"
-              class="menu-list-home"
+              class="menu-list-home link"
               href="#"
               target="_self"
               rel="noreferrer noopener nofollow"
@@ -27,7 +102,7 @@
           <li class="menu-list-item">
             <a
               title="link"
-              class="menu-list-link"
+              class="menu-list-link link"
               href="#"
               target="_self"
               rel="noreferrer noopener nofollow"
@@ -73,50 +148,39 @@
             <use href="/src/images/icons.svg#icon-arrow-buy"></use>
           </svg>
         </button>
-        <button
-          title="button"
-          type="button"
-          class="burger js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="burger-icon" width="25" height="17">
-            <use href="/src/images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
       </div>
-      <a
-        title="link"
-        href="#"
-        class="hero-link-sootasty"
-        target="_self"
-        rel="noreferrer noopener nofollow"
-      >
-        <img src="/src/images/slider-pic71.png" alt="" />
-      </a>
-      <a
-        title="link"
-        href="#"
-        class="hero-link-icecream"
-        target="_self"
-        rel="noreferrer noopener nofollow"
-      >
-        <img src="/src/images/slider-pic41.png" alt="c" />
-      </a>
-      <div class="milk-header-container">
-        <h1>
-          ice cream <br />
-          made with <br />
-          <span>passion</span>
-        </h1>
-        <button title="button" type="button" class="btn-products">
-          Products
-        </button>
-        <button title="button" type="button" class="btn-how-made">
-          How it's made?
-        </button>
+      <div class="caption">
+        <div class="caption-header-container">
+          <h1 class="main-title">
+            ice cream <br />
+            made with <br />
+            <span class="main-title-passion">passion</span>
+          </h1>
+          <button title="button" type="button" class="btn-products">
+            <a
+              href="#"
+              target="_self"
+              rel="noreferrer noopener nofollow"
+              title="link"
+              class="caption-text-p link"
+            >
+              Products</a
+            >
+          </button>
+          <button title="button" type="button" class="btn-how-made">
+            <a
+              href="#"
+              target="_self"
+              rel="noreferrer noopener nofollow"
+              title="link"
+              class="caption-text-h link"
+            >
+              How it's made?</a
+            >
+          </button>
+        </div>
       </div>
-      <div>
+      <div class="cuantos">
         <ul>
           <li>
             <h2>16</h2>
@@ -128,7 +192,25 @@
           </li>
         </ul>
       </div>
-      <div>
+      <a
+        title="link"
+        href="#"
+        class="hero-link-icecream"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+      >
+        <img class="ice-cream" src="/src/images/slider-pic71.png" alt="" />
+      </a>
+      <a
+        title="link"
+        href="#"
+        class="hero-link-sootasty"
+        target="_self"
+        rel="noreferrer noopener nofollow"
+      >
+        <img class="sootasty" src="/src/images/slider-pic41.png" alt="c" />
+      </a>
+      <div class="milk">
         <a
           title="link"
           href="#"
