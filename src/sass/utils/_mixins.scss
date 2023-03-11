@@ -1,5 +1,4 @@
 @import 'variables';
-
 @mixin mobile {
    // @media screen and (min-width: 320px) and (max-width: 767px){   
     @media screen and (max-width: 767px) {
@@ -15,4 +14,21 @@
     @media screen and (min-width: 1200px) {
         @content;
     }
+}
+@mixin custom-button {
+  width: 150px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: $background-color-secondary;
+  color: $tertiary-color;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+@mixin transition-up {
+  //@include transition-up;
+  transition: transform 0.3s ease-in-out;
 }
