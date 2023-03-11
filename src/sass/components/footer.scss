@@ -1,6 +1,7 @@
 //variable
 @import '../utils/variables';
 @import '../utils/mixins';
+@import '../base/global';
 
 footer {
   position: relative;
@@ -119,11 +120,6 @@ footer {
   display: flex;
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
 .footer__title--ice-cream,
 .footer__title--letter,
 .footer__title--made {
@@ -193,7 +189,7 @@ footer {
   font-size: 14px;
   line-height: 1.52;
 }
-ul {
+.social-box__links {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -203,12 +199,12 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
-li {
+.social-box__list {
   display: list-item;
-  text-align: -webkit-match-parent;
+  text-align: inherit;
 }
 
-a {
+.link-footer {
   cursor: pointer;
   text-decoration: none;
 }
@@ -224,11 +220,11 @@ a {
   gap: 35px;
   margin: auto;
 }
-svg[AttributesStyle] {
+.social-box__icon[AttributesStyle] {
   width: 32px;
   height: 32px;
 }
-svg:not(:root) {
+.social-box__icon:not(:root) {
   overflow-clip-margin: content-box;
   overflow: hidden;
 }
