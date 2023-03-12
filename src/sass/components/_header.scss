@@ -483,7 +483,7 @@
   width: 100%;
   height: 100%;
   padding: 93px 15px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $background-color-rgba-quaternary;
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -561,9 +561,6 @@
   margin-right: auto;
   text-align: center;
 }
-.modal-footer {
-  display: block;
-}
 .modal-footer,
 .modal-footer-form {
   display: flex;
@@ -587,7 +584,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(224, 10, 31, 0.1);
+  border: 1px solid $primary-color-rgba;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -598,9 +595,9 @@
   background-color: $background-color-secondary;
   color: $tertiary-color;
   transition: transform 0.3s ease-in-out;
-}
-.modal-footer-btn:hover {
-  transform: translatey(-5px);
+  &:hover {
+    transform: translatey(-5px);
+  }
 }
 .modal-footer-link {
   font-weight: 700;
