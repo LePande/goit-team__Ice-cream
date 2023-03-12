@@ -1,2 +1,64 @@
 @import '../utils/variables';
 @import '../utils/mixins';
+
+/*
+    MIS ESTILOS PARA LA SECCIÓN ADVANTAGES-KG
+*/
+
+#section-advantages-kg{
+    margin-bottom: 60px;
+}
+
+.responsive{
+    @media screen and (max-width: 767px) {
+        
+    }
+}
+
+.advantage-list{
+    list-style: none;
+
+    &__item{
+        margin-bottom: 32px;
+        width: 250px;
+    }
+
+    &__icon{
+        margin-bottom: 16px;
+        cursor: pointer;
+        /* Animation */
+        animation-name: giro;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes giro {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__title{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: calc(41px / 36px);
+        font-family: $text-titan-one;
+        color: $tertiary-color;
+        margin-bottom: 4px;
+        padding-bottom: 16px;
+    }
+
+    &__text{
+        font-size: inherit;
+        font-style: normal;
+        line-height: calc(20px / 16px);
+        font-weight: 700;
+        font-family: $text-dm-sans;
+        color: $secondary-color;
+    }
+}
