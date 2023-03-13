@@ -15,6 +15,51 @@
     &__item{
         margin-bottom: 32px;
         width: 250px;
+
+        @include mobile {
+            width: 200px;
+        }
+
+        @include tablet {
+            width: 200px;
+        }
+    }
+
+    &__item:hover{
+        @include desktop {
+            /* Animation */
+            animation-name: giro2;
+            animation-duration: 4s;
+            animation-timing-function:cubic-bezier();
+        }
+        @keyframes giro2 {
+            0% {
+                transform: rotate(0deg);
+            }
+    
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    &__item:not(:hover){
+        @include desktop {
+            /* Animation */
+            animation-name: inverso;
+            animation-duration: 4s;
+            animation-timing-function:cubic-bezier();
+        }
+    
+        @keyframes inverso {
+            0% {
+                transform: rotate(360deg);
+            }
+    
+            100% {
+                transform: rotate(0deg);
+            }
+        }
     }
 
     &__icon{
@@ -55,7 +100,19 @@
         font-family: $text-dm-sans;
         color: $secondary-color;
     }
-}
+
+    @include tablet {
+        display: flex;
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+} //Fin del .advantage-list
 
 
 
@@ -63,18 +120,9 @@
     TIPOS DE PANTALLA DIFERENTES AL MOVIL (HASTA 767 PX)
 */
 
-@media screen  and (min-width: 768px) and (max-width: 1199px) {
 
-    .advantage-list{
-        display: flex;
 
-        &__item{
-            width: 200px;
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
 
     .advantage-list{
         display: flex;
@@ -87,14 +135,12 @@
         }
 
         &__item:hover{
-            /* Animation */
             animation-name: giro2;
             animation-duration: 4s;
             animation-timing-function:cubic-bezier();
         }
 
         &__item:not(:hover){
-            /* Animation */
             animation-name: inverso;
             animation-duration: 4s;
             animation-timing-function:cubic-bezier();
@@ -120,4 +166,4 @@
             transform: rotate(0deg);
         }
     }
-}
+} */
