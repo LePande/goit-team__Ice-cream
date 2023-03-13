@@ -7,6 +7,11 @@
 
 #section-advantages-kg{
     margin-bottom: 60px;
+    background-color: $background-color-tertiary;
+}
+
+.advantages{
+    padding-top: 40px;
 }
 
 .advantage-list{
@@ -25,7 +30,7 @@
         }
     }
 
-    &__item:hover{
+    &:hover &__item{
         @include desktop {
             /* Animation */
             animation-name: giro2;
