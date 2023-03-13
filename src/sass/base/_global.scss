@@ -1,6 +1,9 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 
+html {
+  scroll-behavior: smooth;
+}
 *,
 ::before,
 ::after {
@@ -44,4 +47,3 @@ p {
   text-decoration: none;
   color: currentColor;
 }
-
