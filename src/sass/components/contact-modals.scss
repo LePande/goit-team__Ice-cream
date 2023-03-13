@@ -8,12 +8,12 @@
   border-radius: 22px;
   transition: linear all 250ms;
   &.one {
-    background: rgba(212, 19, 66, 1);
-    color: $primary-color;
-    margin-bottom: 10px;
-    stroke: $primary-color;
     border: none;
     cursor: pointer;
+    margin-bottom: 10px;
+    color: $primary-color;
+    stroke: $primary-color;
+    background: rgba(212, 19, 66, 1);
 
     @media screen and(min-width:768px) {
       margin-right: 15px;
